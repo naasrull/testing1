@@ -1,0 +1,446 @@
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="styles/newspaper.css"> -->
+    <title>News and Media</title>
+    <meta name="viewport" content="width=device-width">
+
+    <style type="text/css">
+
+        body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+
+}
+
+#menu
+{
+background-image:url(images/content_top.png);
+background-repeat:no-repeat;
+width:950px;
+height:69px;
+margin-left: 350px;
+}
+
+#menu ul {
+	list-style: none;
+	padding: 0px;
+	margin-center:auto;
+	width:900px;
+}
+
+#menu li {
+	list-style: none;
+	padding: 0px;
+	display: inline;
+
+}
+
+#menu a {
+	float: left;
+	width:125px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	padding-top: 30px;
+	font-size: 15px;
+}
+
+#menu a:hover{
+	color:#BAD1F3;
+	background: url(images/menuhov.jpg) no-repeat;
+}
+
+
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.head{
+    text-align: center;
+    position: relative;
+
+
+}
+
+.headerobjectswrapper{
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
+}
+.weatherforcastbox{
+    position: relative;
+    width: 12%;
+    left: 10px;
+    border: 3px double #2f2f2f;
+    padding: 10px 15px 10px 15px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 50px 20px -360px;
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+
+
+}
+.collumns{
+
+}
+
+.collumn{
+    font-size: 14px;
+    line-height: 20px;
+    width: 22.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all .7s;
+}
+
+
+.collumn + .collumn {
+  border-left: 1px solid #2f2f2f;
+}
+.collumn .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+
+
+}
+.collumn .headline.hl1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+
+}
+
+.collumn .headline.hl2{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.collumn .headline.hl2:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl2:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl4:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl5{
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6{
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl6:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+.collumn .headline.hl7{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl8{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl9{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl10{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .citation{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 44px;
+    /*font-style: italic;*/
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+    font-feature-settings: "liga", "dlig";
+
+}
+.collumn .citation:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .citation:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .figure {
+      margin: 0 0 20px;
+}
+.collumn .figcaption{
+    font-style: italic;
+    font-size: 12px;
+}
+.media {
+    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+/*________________________________________________________________________________________________________________________________*/
+/*MEDIAQUERIES*/
+@media only all and (max-width: 1300px) {
+    .weatherforcastbox{
+        display: none;
+    }
+
+}
+@media only all and (max-width: 1200px) {
+    .collumn{
+        width: 31%;
+    }
+
+}
+    @media only all and (max-width: 900px) {
+    .collumn{
+        width: 47%;
+    }
+
+}
+@media only all and (max-width: 600px) {
+    .collumn{
+        width: 100%;
+    }
+    .collumn + .collumn {
+                border-left: none;
+        border-bottom: 1px solid #2f2f2f;
+    }
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+        overflow: hidden;
+    }
+
+
+
+}
+    </style>
+
+</head>
+<body>
+<div class="head">
+    <div class="headerobjectswrapper">
+
+        <header>News and Media</header>
+    </div>
+
+    <div class="subhead">Malaysia, AM - Wednesday jun 24, 2020 </div>
+
+</div>
+
+
+
+
+
+
+
+
+        <div id="menu">
+        	<ul>
+
+<nav>
+                <li class="menuitem"><a href="index.html">About</a></li>
+                <li class="menuitem"><a href="prog.html">Tentative Program</a></li>
+                <li class="menuitem"><a href="sp.html">Speakers</a></li>
+                <li class="menuitem"><a href="#">News & Media </a></li>
+								<li class="menuitem"><a href="registration.html"> Registration </a></li>
+              <li class="menuitem"><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+					</nav>
+        </div>
+
+
+
+<div class="content">
+    <div class="collumns">
+        <div class="collumn">
+            <div class="head"><span class="headline hl3">International Conference on Interventional Oncology (ICIO-20)</span><p><span class="headline hl4">OVERVIEW</span></p></div>
+           We are glad to invite you to the International Conference on Nursing Practice & Research (ICNPR-20) going to commence from 13th August 2020 at George Town, organized by IITER which anticipates more than 500 participants around the world with thought provoking Keynote lectures, Oral talks and Poster presentations, Symposia, Workshops.
+           <br><br>
+           This two days is your best opportunity to reach the largest assemblage of participants from academia, students , researchers and industrial professionals. We will be delighted and honoured by gathering professionals under one roof with the theme of Nursing Practice & Research.</p>
+            <img src="images/nurses.jpeg" alt="Girl in a jacket" width="270" height="200">
+            <span class="citation">"Conference Theme."</span>
+            <p>
+                The theme of the conference is to provide an international platform to all the world developers, researchers to engage in scientific discussion about current research and latest advancements in engineering and technology which facilitates the exchange of new ideas.
+            </p>
+       </div>
+
+        <div class="collumn">
+            <div class="head"><span class="headline hl5">COVID-19 Pandemic: Surging Demand for Nurses</span><p><span class="headline hl6">An Overview on This Phenomenon</span></p></div>
+            Prior to the virus outbreak, there are already several nursing specialties which are in the rising tide of demand. The demand for nurses is expected to soar greatly by the end of 2020. This indicates that the demand for nurses will soon be greater than the supply to the extent that those who pursue a degree or career in nursing will always get into employment and earn good salary.
+             <br><br>
+            Simultaneously, some specialties have a even more tremendous demand than the others. Every year, there is a consistent increase in demand for many of these specialties. This is due to the rapid aging of the population and it opens up more treatment options for all kinds of diseases.
+            <br><br>
+			 <img src="images/image.jpg" alt="image" width="270" height="200">
+            <br><br>
+            When the outbreak occurs, the demand for nurses is even higher than ever before. According to Health Minister Datuk Seri Dr Adham Baba, he pointed out that the number of professional medical practitioners is currently sufficient for every state but more infectious disease physicians are in demand. At the same time, he emphasizes that the Health Ministry (MOH) will designate 830 nurses to government hospitals across the country to cope with the wild spread of coronavirus. Their designations will boost up the manpower capacity at 135 hospitals nationwide.
+        </div>
+
+        <div class="collumn"><div class="head"><span class="headline hl1">So…which are the booming nursing specialties?</span><!-- <p><span class="headline hl2">Let go your conscious self and act on instinct</span></p> -->
+        </div>
+          According to Nurse Journal, there are 5 specialties which are in high demand. They are nursing anaesthetist, dialysis nurse, legal nurse consultant, nurse midwife and nurse case manager.
+           <br> <br>
+          Upon reviewing the job description of each nursing specialty, a conclusion can be drawn: nurse case manager is the most in demand among the other four during the coronavirus crisis</p>
+
+           <video width="299" height="300" controls>
+             <source src="images/video.mp4" type="video/mp4">
+           </video>
+
+           <span class="headline hl6">What do nurse case managers do?</span>
+           <p>
+               When you become a registered nurse (RN) after completing a nursing program and fulfilling the requirements to obtain a nursing license, you can leave a regular nursing job and become a nurse case manager.<br>
+
+                The roles of a nurse case manager: <br>
+            <ul>
+                <li>Monitor the progress of a patient</li>
+                <li>Evaluate patients’ care</li>
+                <li>Suggest other treatments.</li>
+                <li> Utilize resources and services the best way possible</li>
+            </ul>
+
+                Their roles are crucial in overcoming this coronavirus crisis as the infected tend to need extra medical care while being hospitalized. In addition, a nurse case manager should also be wise in allocating resources for treatment. <br>
+
+                Selecting this nursing specialty allows you to enter the healthcare workforce with minimum entry due to the extremely high demand. However, this career requires high competence and accountability in order to succeed.
+           </p>
+
+
+           </div>
+        <div class="collumn"><div class="head"><span class="headline hl3">International Conference on Nursing and Healthcare </span><p><span class="headline hl4">About</span></p></div><p>The International Conference on Nursing and Healthcare aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Nursing and Healthcare Informatics. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Nursing and Healthcare Informatics.</p>
+
+         <video width="299" height="300" controls>
+             <source src="images/video1.mp4" type="video/mp4">
+        </video>
+
+        <p>
+            Nursing encompasses autonomous and collaborative care of individuals of all ages, families, groups and communities, sick or well and in all settings. It includes the promotion of health, the prevention of illness, and the care of ill, disabled and dying people. Nurses play a critical role in health care and are often the unsung heroes in health care facilities and emergency response. They are often the first to detect health emergencies and work on the front lines of disease prevention and the delivery of primary health care, including promotion, prevention, treatment and rehabilitation. <br><br>
+
+            In many countries, nurses make up half of all health care professionals and have a vital role in how health actions are organized and applied, both at the front-line and managerial levels.
+        </p>
+
+     </div>
+
+    </div>
+</div>
+
+</body>
+</html>
